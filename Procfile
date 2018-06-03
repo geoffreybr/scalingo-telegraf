@@ -1,3 +1,2 @@
-web: kafka/bin/zookeeper-server-start.sh $ZOOKEEPER_CONF
-web: kafka/bin/kafka-server-start.sh $KAFKA_CONF --override listeners="PLAINTEXT://:$PORT"
+web: kafka.sh
 worker: bin/telegraf -conf telegraf.conf
